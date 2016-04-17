@@ -1,0 +1,34 @@
+{
+  "name": "postcss-tipsy",
+  "version": "1.0.0",
+  "description": "Postcss plugin for a simple tooltip css",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangvanthanh/postcss-tipsy.git"
+  },
+  "keywords": [
+    "css",
+    "tooltip",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "author": "Dang Van Thanh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangvanthanh/postcss-tipsy/issues"
+  },
+  "homepage": "https://github.com/dangvanthanh/postcss-tipsy#readme",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "xo": "^0.14.0"
+  },
+  "dependencies": {
+    "postcss": "^5.0.19"
+  }
+}
