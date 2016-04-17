@@ -1,5 +1,7 @@
 # postcss-tipsy
 
+[![Build Status: Linux](https://api.travis-ci.org/dangvanthanh/postcss-tipsy.svg?branch=master)](https://travis-ci.org/dangvanthanh/postcss-tipsy)
+
 [Postcss](https://github.com/postcss/postcss) plugin for a simple tooltip css. This is based **[tipsy.sass](https://github.com/dangvanthanh/tipsy.sass)** version.
 
 ## Usage
