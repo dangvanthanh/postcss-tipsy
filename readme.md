@@ -1,21 +1,23 @@
 # postcss-tipsy
 
-[![Build Status: Linux](https://api.travis-ci.org/dangvanthanh/postcss-tipsy.svg?branch=master)](https://travis-ci.org/dangvanthanh/postcss-tipsy)
-
-[Postcss](https://github.com/postcss/postcss) plugin for a simple tooltip css. This is based **[tipsy.sass](https://github.com/dangvanthanh/tipsy.sass)** version.
+> [Postcss](https://github.com/postcss/postcss) plugin for a simple tooltip css. This is based **[tipsy.sass](https://github.com/dangvanthanh/tipsy.sass)** version.
 
 ## Usage
 
 ### Installation
 
 ```bash
-npm i [--save] postcss-tipsy
+$ npm i --save postcss-tipsy
 ```
 
 #### Configure
 
-```
-postcss([require('postcss-tipsy')])
+```js
+module.exports = {
+	plugins: {
+		require('postcss-longshadow-text')
+	}
+}
 ```
 
 See [Postcss](https://github.com/postcss/postcss) docs for examples for your environment.
