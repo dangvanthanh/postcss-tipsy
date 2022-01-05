@@ -55,4 +55,4 @@ Usage
 
 ## License
 
-MIT © [Dang Van Thanh](http://dangthanh.org)
+MIT © [Dang Van Thanh](https://dangthanh.org)
