@@ -78,12 +78,7 @@ function process(decl, { list }) {
   if (cssGravity === 'se') {
     newBlock(decl, ':hover:before,:focus:before', ['bottom'], ['-15%'])
     newBlock(decl, ':hover:after,:focus:after', ['top'], ['115%'])
-    newBlock(
-      decl,
-      ':before',
-      ['bordeer-bottom-color', 'left', 'bottom'],
-      [cssBackground, '60%', '-35%']
-    )
+    newBlock(decl, ':before', ['bordeer-bottom-color', 'left', 'bottom'], [cssBackground, '60%', '-35%'])
     newBlock(decl, ':after', ['left', 'top'], ['50%', '135%'])
   }
 
@@ -98,12 +93,7 @@ function process(decl, { list }) {
   if (cssGravity === 'sw') {
     newBlock(decl, ':hover:before,:focus:before', ['bottom'], ['-15%'])
     newBlock(decl, ':hover:after,:focus:after', ['top'], ['115%'])
-    newBlock(
-      decl,
-      ':before',
-      ['border-bottom-color', 'right', 'bottom'],
-      [cssBackground, '60%', '-35%']
-    )
+    newBlock(decl, ':before', ['border-bottom-color', 'right', 'bottom'], [cssBackground, '60%', '-35%'])
     newBlock(decl, ':after', ['right', 'top'], ['50%', '135%'])
   }
 
@@ -115,40 +105,26 @@ function process(decl, { list }) {
     newBlock(decl, ':after', ['right'], ['125%'])
   }
 
-  newBlock(
-    decl,
-    ':hover:before,:focus:before,:hover:after,:focus:after',
-    ['visibility', 'opacity'],
-    ['visible', '1']
-  )
+  newBlock(decl, ':hover:before,:focus:before,:hover:after,:focus:after', ['visibility', 'opacity'], ['visible', '1'])
 
   newBlock(
     decl,
     ':before,:after',
     ['position', 'visibility', 'opacity', 'z-index', 'pointer-events', 'transform', 'transition'],
-    ['absolute', 'hidden', '0', '1000000', 'none', 'translate3d(0, 0, 0)', '250ms ease-in-out']
+    ['absolute', 'hidden', '0', '1000000', 'none', 'translate3d(0, 0, 0)', '250ms ease-in-out'],
   )
 
   newBlock(
     decl,
     ':before',
     ['content', 'border', 'bottom', 'z-index'],
-    ['""', cssSize + ' solid transparent', '0', '1000001']
+    ['""', cssSize + ' solid transparent', '0', '1000001'],
   )
 
   newBlock(
     decl,
     ':after',
-    [
-      'content',
-      'background-color',
-      'border-radius',
-      'color',
-      'text-shadow',
-      'padding',
-      'white-space',
-      'box-shadow',
-    ],
+    ['content', 'background-color', 'border-radius', 'color', 'text-shadow', 'padding', 'white-space', 'box-shadow'],
     [
       'attr(data-tipsy)',
       cssBackground,
@@ -158,7 +134,7 @@ function process(decl, { list }) {
       '5px 10px',
       'nowrap',
       '1px 1px 3px rgba(0, 0, 0, .2)',
-    ]
+    ],
   )
 
   decl.remove()
