@@ -1,12 +1,13 @@
 {
   "name": "postcss-tipsy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Postcss plugin for a simple tooltip css",
   "main": "index.js",
   "engines": {
     "node": ">=10.0"
   },
   "scripts": {
+    "build": "bun build src/index.js --outdir ./. --minify",
     "test": "jest-ci --coverage",
     "prepare": "husky install"
   },
